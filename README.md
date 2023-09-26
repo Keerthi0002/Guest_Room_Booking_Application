@@ -1,86 +1,79 @@
 # 🌟 Guest Room Booking Application 🏠
 
-Welcome to the 🌟 Guest Room Booking Application 🏠! This user-friendly platform is designed to help house owners manage their guest room bookings seamlessly. Whether you're a house owner looking to rent out rooms or a guest in search of comfortable accommodation, this application has you covered. Let's dive into the details!
+## Introduction 📜
 
-## Overview 📝
+Welcome to the 🌟 Guest Room Booking Application 🏠! This application is designed to help house owners manage their guest room bookings effectively. Whether you're a house owner looking to rent out your rooms or a guest in search of a comfortable stay, this platform has got you covered.
 
-Imagine you're a house owner who wants to rent out rooms for short stays (less than 30 days). This application allows house owners to:
+## Project Overview 🏡
 
-- Register their properties and list rooms available for booking.
-- Provide details about each room, including room name, floor size, number of beds, and amenities.
-- Set minimum and maximum booking durations for each room.
-- Specify a daily rent amount.
-- Upload room photos to attract guests.
+### Project Name:
+Guest Room Booking Application developed with PHP
 
-From the guest's perspective, anyone can use this application to:
+### Installation 🚀
 
-- Browse and view a list of available rooms from different house owners.
-- Explore room details, including photos and amenities.
-- Check room availability on an interactive calendar.
-- Book a room for specific dates.
+To get started with the Guest Room Booking Application, follow these simple installation steps:
 
-## Specifications 📌
+1. **XAMPP Installation:**
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) or any PHP development environment of your choice.
 
-### User Management
+2. **Clone the Repository:**
+   - Clone or download this repository to your local machine.
 
-#### House Owners 👩‍🏫👨‍🏫
-- Register with an email address and mobile number.
-- Create, edit, and delete rooms, including room details and booking rules.
-- Set the minimum and maximum booking period for each room.
-- Define a daily rent amount for each room.
-- Upload room photos to showcase their property.
+3. **Database Setup:**
+   - Import the provided database schema (guestroombooking.sql) into your MySQL server using a tool like [phpMyAdmin](https://www.phpmyadmin.net/) or the command line.
 
-#### Customers 👩‍👦‍👦
-- Register with an email address and mobile number.
-- Browse and view all available rooms.
-- Access room details and photos.
-- Check room availability on an interactive calendar.
-- Choose specific dates and book rooms.
+4. **Edit Database Configuration:**
+   - In the `config.php` file, update the database connection settings to match your local setup.
+   
+   ```php
+   $db_host = "localhost";
+   $db_user = "root";
+   $db_password = "";
+   $db_name = "guestroombooking";
+   ```
 
-## Installation 🚀
+5. **Start the Server:**
+   - Start your XAMPP or PHP development server.
 
-To set up the Guest Room Booking Application, follow these steps:
+6. **Access the Application:**
+   - Open your web browser and navigate to `http://localhost/guest-room-booking` (or the appropriate URL based on your setup).
 
-1. **Server Setup**:
-   - Download and install XAMPP or a similar server environment with PHP support.
+7. **Admin Credentials:**
+   - Use the following admin credentials to access the application:
 
-2. **Database Setup**:
-   - Create a MySQL database for the application.
+      - Email: admin@gmail.com
+      - Password: 1234
 
-3. **File Setup**:
-   - Clone the application repository into your server's root folder (htdocs for XAMPP).
+## Features and Functionality 🛏️
 
-4. **Configuration**:
-   - Edit the database connection credentials in a configuration file (e.g., `config.php`) to ensure proper database connectivity.
+### House Owners:
+- **Registration:**
+  - House owners can register for an account with an email address and a mobile number.
 
-5. **Initialization**:
-   - Run database migration scripts to set up the required tables.
+- **Property Management:**
+  - House owners can register their properties and upload details for each room.
+  - They can set the minimum and maximum booking period for each room.
+  - House owners can specify the rent amount for each day for their rooms.
+  - Upload photos to showcase the rooms.
 
-6. **Start the Server**:
-   - Start your XAMPP/WAMP server.
+- **Edit and Delete:**
+  - House owners have the flexibility to edit or delete room details as needed.
 
-7. **Access the Application**:
-   - Open a web browser and navigate to the application's URL.
+### Customers:
+- **Registration:**
+  - Customers can also register for an account with an email address and a mobile number.
 
-8. **Enjoy**:
-   - Start using the Guest Room Booking Application!
+- **Browse and Book:**
+  - Customers can browse all available rooms from different house owners.
+  - They can view detailed information about each room, including photos.
+  - An availability calendar helps customers check room availability for specific dates.
 
-## Code Implementation ⚙️
+- **Booking:**
+  - Customers can choose their desired dates and book a room.
+  - Once a room is booked, it becomes unavailable for other customers during that period.
 
-The code for this application has been implemented using PHP, JavaScript, and CSS. Below are the key components and code snippets:
+## Conclusion 🏠
 
-- **User Registration and Login**: PHP code to handle user registration and login for both house owners and customers.
+The 🌟 Guest Room Booking Application 🏡 simplifies the process of booking guest rooms for both house owners and customers. House owners can easily manage their properties, and customers can find and book rooms that meet their requirements.
 
-- **Room Management**: PHP scripts to allow house owners to create, edit, and delete rooms, set booking rules, and upload room photos.
-
-- **Room Listings**: JavaScript and PHP code to fetch and display a list of available rooms to customers.
-
-- **Booking System**: Code to manage the booking process, check room availability, and handle booking requests.
-
-- **Database Operations**: MySQL queries and PHP functions to interact with the database and store user and room information.
-
-The complete source code for this application can be found in the application repository.
-
-## Conclusion 🎉
-
-The 🌟 Guest Room Booking Application 🏠 is your go-to solution for managing guest room bookings with ease. Whether you're a house owner looking to rent out rooms or a traveler in search of comfortable accommodations, this application has you covered. Follow the installation steps, explore the code, and start using the application today! Safe travels and happy hosting! 🚀🏡
+Let's make booking guest rooms a hassle-free experience! 🛌🌟
